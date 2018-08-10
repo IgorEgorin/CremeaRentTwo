@@ -34,7 +34,7 @@ public class MainPage {
 
     public MainPage enterTakeAndReturnCityDataTimePromocodeSubmit (String cityOne, String cityTwo, String dataTake, String dataReturn,
                                                                    String timeOne, String timeTwo, String promoCode) {
-        System.out.println("TimeOne inside long method is\n"+timeOne);
+//        System.out.println("TimeOne inside long method is\n"+timeOne);
 
         tableTakeCityMainPage.click();
         selectCityTake(cityOne);
@@ -145,7 +145,6 @@ public class MainPage {
 
 
     private MainPage selectTimeTake (String timeTake) {
-        System.out.println("TimeOne time switch/case is\n"+timeTake);
         switch (timeTake) {
             case "00:00":
                 $("[rel=\"0\"]",0).click();
